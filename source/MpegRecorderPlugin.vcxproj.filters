@@ -1,0 +1,446 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="mpeg_video_recorder.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="api\ot\glm\glm_ext.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="api\ot\glm\glm_meta.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="api\ot\glm\glm_meta_v8.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="api\ot\glm\glm_types.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="api\ot\mapressor\layer_cfg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="api\ot\mapressor\mapressor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="api\ot\mapressor\mapressor.js.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="api\ot\mapressor\raster_layer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="api\ot\mapressor\raster_layer.js.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="api\ot\mapressor\vector_cfg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="api\ot\mapressor\vector_layer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="api\ot\mapressor\vector_layer.js.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="api\ot\aircraft.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="api\ot\aircraft.js.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="api\ot\aircraft_data.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="api\ot\aircraft_physics.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="api\ot\aircraft_physics.js.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="api\ot\aircraft_scenario.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="api\ot\aircraft_scenario.js.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="api\ot\animation.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="api\ot\animation.js.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="api\ot\animation_manager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="api\ot\animation_manager.js.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="api\ot\animation_stack.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="api\ot\animation_stack.js.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="api\ot\blend_tree.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="api\ot\blend_tree.js.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="api\ot\c4e_view.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="api\ot\c4e_view.js.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="api\ot\canvas.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="api\ot\canvas.js.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="api\ot\character.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="api\ot\character.js.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="api\ot\console.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="api\ot\console.js.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="api\ot\cubeface.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="api\ot\desktop_manager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="api\ot\desktop_manager.js.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="api\ot\draw_buffer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="api\ot\draw_buffer.js.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="api\ot\env.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="api\ot\environment.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="api\ot\environment.js.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="api\ot\explosion_params.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="api\ot\explosions.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="api\ot\explosions.js.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="api\ot\fb.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="api\ot\fb.js.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="api\ot\fbx_node.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="api\ot\fbx_node.js.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="api\ot\file_dialog.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="api\ot\file_dialog.js.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="api\ot\file_dialog_item.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="api\ot\file_dlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="api\ot\file_dlg.js.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="api\ot\flight_path.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="api\ot\flight_path.js.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="api\ot\flight_path_waypoint.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="api\ot\flight_path_waypoint.js.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="api\ot\game_master.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="api\ot\game_master.js.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="api\ot\game_npc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="api\ot\game_npc.js.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="api\ot\geom_types.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="api\ot\geomob.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="api\ot\geomob.js.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="api\ot\ground_vehicle.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="api\ot\ground_vehicle.js.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="api\ot\ground_vehicle_physics.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="api\ot\ground_vehicle_physics.js.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="api\ot\hero.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="api\ot\hero.js.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="api\ot\igc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="api\ot\igc.js.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="api\ot\igc_data.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="api\ot\jsb.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="api\ot\jsb.js.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="api\ot\light_cfg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="api\ot\light_manager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="api\ot\light_manager.js.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="api\ot\location.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="api\ot\location.js.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="api\ot\logger.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="api\ot\logger.js.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="api\ot\mapressor_raster_layer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="api\ot\mapressor_raster_layer.js.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="api\ot\master.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="api\ot\master.js.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="api\ot\master_iocfg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="api\ot\module.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="api\ot\module.js.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="api\ot\object.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="api\ot\object.js.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="api\ot\object_cfg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="api\ot\particle_system.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="api\ot\particle_system.js.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="api\ot\pathway.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="api\ot\pathway.js.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="api\ot\pkg_inspector.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="api\ot\pkg_inspector.js.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="api\ot\pkgview.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="api\ot\pkgview.js.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="api\ot\player.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="api\ot\player.js.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="api\ot\rec_track.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="api\ot\rec_track.js.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="api\ot\recorder.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="api\ot\recorder.js.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="api\ot\sketch.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="api\ot\sketch.js.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="api\ot\sndgrp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="api\ot\sndgrp.js.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="api\ot\soundman.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="api\ot\soundman.js.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="api\ot\static_object.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="api\ot\static_object.js.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="api\ot\terrain_data.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="api\ot\terrain_data.js.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="api\ot\terrain_data_cfg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="api\ot\threat_dome.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="api\ot\threat_dome.js.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="api\ot\tracker.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="api\ot\tracker.js.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="api\ot\tracker_arm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="api\ot\tracker_arm.js.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="api\ot\treegen.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="api\ot\treegen.js.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="api\ot\vehicle_cfg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="api\ot\video_recorder.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="api\ot\video_recorder.js.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="api\ot\view.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="api\ot\view.js.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="api\ot\visualizer_cfg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="api\ot\weapon_cfg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="api\ot\world.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="api\ot\world.js.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="api\ot\world_cfg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="x264_cfg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="mpeg_video_recorder.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="api\x264\libx264.lib" />
+    <Library Include="api\mp4v2\libmp4v2.lib" />
+    <Library Include="api\comm\_build\msvc\2013\bin\Win32\Release\comm_static.lib" />
+  </ItemGroup>
+</Project>

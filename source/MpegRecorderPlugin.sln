@@ -1,0 +1,36 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MpegRecorderPlugin", "MpegRecorderPlugin.vcxproj", "{057215EB-8D8F-4EF0-9E4E-183CC9CCBCDA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Debug|x64 = Debug|x64
+		Debug-clang|Win32 = Debug-clang|Win32
+		Debug-clang|x64 = Debug-clang|x64
+		Release|Win32 = Release|Win32
+		Release|x64 = Release|x64
+		ReleaseLTCG|Win32 = ReleaseLTCG|Win32
+		ReleaseLTCG|x64 = ReleaseLTCG|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{057215EB-8D8F-4EF0-9E4E-183CC9CCBCDA}.Debug|Win32.ActiveCfg = Debug|Win32
+		{057215EB-8D8F-4EF0-9E4E-183CC9CCBCDA}.Debug|Win32.Build.0 = Debug|Win32
+		{057215EB-8D8F-4EF0-9E4E-183CC9CCBCDA}.Debug|x64.ActiveCfg = Debug|Win32
+		{057215EB-8D8F-4EF0-9E4E-183CC9CCBCDA}.Debug-clang|Win32.ActiveCfg = Debug|Win32
+		{057215EB-8D8F-4EF0-9E4E-183CC9CCBCDA}.Debug-clang|Win32.Build.0 = Debug|Win32
+		{057215EB-8D8F-4EF0-9E4E-183CC9CCBCDA}.Debug-clang|x64.ActiveCfg = Debug|Win32
+		{057215EB-8D8F-4EF0-9E4E-183CC9CCBCDA}.Release|Win32.ActiveCfg = Release|Win32
+		{057215EB-8D8F-4EF0-9E4E-183CC9CCBCDA}.Release|Win32.Build.0 = Release|Win32
+		{057215EB-8D8F-4EF0-9E4E-183CC9CCBCDA}.Release|x64.ActiveCfg = Release|Win32
+		{057215EB-8D8F-4EF0-9E4E-183CC9CCBCDA}.ReleaseLTCG|Win32.ActiveCfg = Release|Win32
+		{057215EB-8D8F-4EF0-9E4E-183CC9CCBCDA}.ReleaseLTCG|Win32.Build.0 = Release|Win32
+		{057215EB-8D8F-4EF0-9E4E-183CC9CCBCDA}.ReleaseLTCG|x64.ActiveCfg = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

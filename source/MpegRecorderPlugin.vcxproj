@@ -1,0 +1,244 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{057215EB-8D8F-4EF0-9E4E-183CC9CCBCDA}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>MpegRecorderPlugin</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <TargetName>mpeg_recorder_plugin</TargetName>
+    <OutDir>$(SolutionDir)bin\$(Configuration)</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <TargetName>mpeg_recorder_plugin</TargetName>
+    <IncludePath>$(ProjectDir)api;$(IncludePath)</IncludePath>
+    <OutDir>$(SolutionDir)bin\$(Configuration)</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;MPEGRECORDERPLUGIN_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PrecompiledHeaderFile />
+      <ForcedIncludeFiles />
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;MPEGRECORDERPLUGIN_EXPORTS;MP4V2_USE_STATIC_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <OmitFramePointers>true</OmitFramePointers>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <PrecompiledHeaderFile />
+      <ForcedIncludeFiles />
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="api\ot\aircraft.h" />
+    <ClInclude Include="api\ot\aircraft.js.h" />
+    <ClInclude Include="api\ot\aircraft_data.h" />
+    <ClInclude Include="api\ot\aircraft_physics.h" />
+    <ClInclude Include="api\ot\aircraft_physics.js.h" />
+    <ClInclude Include="api\ot\aircraft_scenario.h" />
+    <ClInclude Include="api\ot\aircraft_scenario.js.h" />
+    <ClInclude Include="api\ot\animation.h" />
+    <ClInclude Include="api\ot\animation.js.h" />
+    <ClInclude Include="api\ot\animation_manager.h" />
+    <ClInclude Include="api\ot\animation_manager.js.h" />
+    <ClInclude Include="api\ot\animation_stack.h" />
+    <ClInclude Include="api\ot\animation_stack.js.h" />
+    <ClInclude Include="api\ot\blend_tree.h" />
+    <ClInclude Include="api\ot\blend_tree.js.h" />
+    <ClInclude Include="api\ot\c4e_view.h" />
+    <ClInclude Include="api\ot\c4e_view.js.h" />
+    <ClInclude Include="api\ot\canvas.h" />
+    <ClInclude Include="api\ot\canvas.js.h" />
+    <ClInclude Include="api\ot\character.h" />
+    <ClInclude Include="api\ot\character.js.h" />
+    <ClInclude Include="api\ot\console.h" />
+    <ClInclude Include="api\ot\console.js.h" />
+    <ClInclude Include="api\ot\cubeface.h" />
+    <ClInclude Include="api\ot\desktop_manager.h" />
+    <ClInclude Include="api\ot\desktop_manager.js.h" />
+    <ClInclude Include="api\ot\draw_buffer.h" />
+    <ClInclude Include="api\ot\draw_buffer.js.h" />
+    <ClInclude Include="api\ot\env.h" />
+    <ClInclude Include="api\ot\environment.h" />
+    <ClInclude Include="api\ot\environment.js.h" />
+    <ClInclude Include="api\ot\explosions.h" />
+    <ClInclude Include="api\ot\explosions.js.h" />
+    <ClInclude Include="api\ot\explosion_params.h" />
+    <ClInclude Include="api\ot\fb.h" />
+    <ClInclude Include="api\ot\fb.js.h" />
+    <ClInclude Include="api\ot\fbx_node.h" />
+    <ClInclude Include="api\ot\fbx_node.js.h" />
+    <ClInclude Include="api\ot\file_dialog.h" />
+    <ClInclude Include="api\ot\file_dialog.js.h" />
+    <ClInclude Include="api\ot\file_dialog_item.h" />
+    <ClInclude Include="api\ot\file_dlg.h" />
+    <ClInclude Include="api\ot\file_dlg.js.h" />
+    <ClInclude Include="api\ot\flight_path.h" />
+    <ClInclude Include="api\ot\flight_path.js.h" />
+    <ClInclude Include="api\ot\flight_path_waypoint.h" />
+    <ClInclude Include="api\ot\flight_path_waypoint.js.h" />
+    <ClInclude Include="api\ot\game_master.h" />
+    <ClInclude Include="api\ot\game_master.js.h" />
+    <ClInclude Include="api\ot\game_npc.h" />
+    <ClInclude Include="api\ot\game_npc.js.h" />
+    <ClInclude Include="api\ot\geomob.h" />
+    <ClInclude Include="api\ot\geomob.js.h" />
+    <ClInclude Include="api\ot\geom_types.h" />
+    <ClInclude Include="api\ot\glm\glm_ext.h" />
+    <ClInclude Include="api\ot\glm\glm_meta.h" />
+    <ClInclude Include="api\ot\glm\glm_meta_v8.h" />
+    <ClInclude Include="api\ot\glm\glm_types.h" />
+    <ClInclude Include="api\ot\ground_vehicle.h" />
+    <ClInclude Include="api\ot\ground_vehicle.js.h" />
+    <ClInclude Include="api\ot\ground_vehicle_physics.h" />
+    <ClInclude Include="api\ot\ground_vehicle_physics.js.h" />
+    <ClInclude Include="api\ot\hero.h" />
+    <ClInclude Include="api\ot\hero.js.h" />
+    <ClInclude Include="api\ot\igc.h" />
+    <ClInclude Include="api\ot\igc.js.h" />
+    <ClInclude Include="api\ot\igc_data.h" />
+    <ClInclude Include="api\ot\jsb.h" />
+    <ClInclude Include="api\ot\jsb.js.h" />
+    <ClInclude Include="api\ot\light_cfg.h" />
+    <ClInclude Include="api\ot\light_manager.h" />
+    <ClInclude Include="api\ot\light_manager.js.h" />
+    <ClInclude Include="api\ot\location.h" />
+    <ClInclude Include="api\ot\location.js.h" />
+    <ClInclude Include="api\ot\logger.h" />
+    <ClInclude Include="api\ot\logger.js.h" />
+    <ClInclude Include="api\ot\mapressor\layer_cfg.h" />
+    <ClInclude Include="api\ot\mapressor\mapressor.h" />
+    <ClInclude Include="api\ot\mapressor\mapressor.js.h" />
+    <ClInclude Include="api\ot\mapressor\raster_layer.h" />
+    <ClInclude Include="api\ot\mapressor\raster_layer.js.h" />
+    <ClInclude Include="api\ot\mapressor\vector_cfg.h" />
+    <ClInclude Include="api\ot\mapressor\vector_layer.h" />
+    <ClInclude Include="api\ot\mapressor\vector_layer.js.h" />
+    <ClInclude Include="api\ot\mapressor_raster_layer.h" />
+    <ClInclude Include="api\ot\mapressor_raster_layer.js.h" />
+    <ClInclude Include="api\ot\master.h" />
+    <ClInclude Include="api\ot\master.js.h" />
+    <ClInclude Include="api\ot\master_iocfg.h" />
+    <ClInclude Include="api\ot\module.h" />
+    <ClInclude Include="api\ot\module.js.h" />
+    <ClInclude Include="api\ot\object.h" />
+    <ClInclude Include="api\ot\object.js.h" />
+    <ClInclude Include="api\ot\object_cfg.h" />
+    <ClInclude Include="api\ot\particle_system.h" />
+    <ClInclude Include="api\ot\particle_system.js.h" />
+    <ClInclude Include="api\ot\pathway.h" />
+    <ClInclude Include="api\ot\pathway.js.h" />
+    <ClInclude Include="api\ot\pkgview.h" />
+    <ClInclude Include="api\ot\pkgview.js.h" />
+    <ClInclude Include="api\ot\pkg_inspector.h" />
+    <ClInclude Include="api\ot\pkg_inspector.js.h" />
+    <ClInclude Include="api\ot\player.h" />
+    <ClInclude Include="api\ot\player.js.h" />
+    <ClInclude Include="api\ot\recorder.h" />
+    <ClInclude Include="api\ot\recorder.js.h" />
+    <ClInclude Include="api\ot\rec_track.h" />
+    <ClInclude Include="api\ot\rec_track.js.h" />
+    <ClInclude Include="api\ot\sketch.h" />
+    <ClInclude Include="api\ot\sketch.js.h" />
+    <ClInclude Include="api\ot\sndgrp.h" />
+    <ClInclude Include="api\ot\sndgrp.js.h" />
+    <ClInclude Include="api\ot\soundman.h" />
+    <ClInclude Include="api\ot\soundman.js.h" />
+    <ClInclude Include="api\ot\static_object.h" />
+    <ClInclude Include="api\ot\static_object.js.h" />
+    <ClInclude Include="api\ot\terrain_data.h" />
+    <ClInclude Include="api\ot\terrain_data.js.h" />
+    <ClInclude Include="api\ot\terrain_data_cfg.h" />
+    <ClInclude Include="api\ot\threat_dome.h" />
+    <ClInclude Include="api\ot\threat_dome.js.h" />
+    <ClInclude Include="api\ot\tracker.h" />
+    <ClInclude Include="api\ot\tracker.js.h" />
+    <ClInclude Include="api\ot\tracker_arm.h" />
+    <ClInclude Include="api\ot\tracker_arm.js.h" />
+    <ClInclude Include="api\ot\treegen.h" />
+    <ClInclude Include="api\ot\treegen.js.h" />
+    <ClInclude Include="api\ot\vehicle_cfg.h" />
+    <ClInclude Include="api\ot\video_recorder.h" />
+    <ClInclude Include="api\ot\video_recorder.js.h" />
+    <ClInclude Include="api\ot\view.h" />
+    <ClInclude Include="api\ot\view.js.h" />
+    <ClInclude Include="api\ot\visualizer_cfg.h" />
+    <ClInclude Include="api\ot\weapon_cfg.h" />
+    <ClInclude Include="api\ot\world.h" />
+    <ClInclude Include="api\ot\world.js.h" />
+    <ClInclude Include="api\ot\world_cfg.h" />
+    <ClInclude Include="mpeg_video_recorder.h" />
+    <ClInclude Include="x264_cfg.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="mpeg_video_recorder.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="api\comm\_build\msvc\2013\bin\Win32\Release\comm_static.lib" />
+    <Library Include="api\mp4v2\libmp4v2.lib" />
+    <Library Include="api\x264\libx264.lib" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
