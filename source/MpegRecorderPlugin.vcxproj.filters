@@ -438,9 +438,4 @@
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
-  <ItemGroup>
-    <Library Include="api\x264\libx264.lib" />
-    <Library Include="api\mp4v2\libmp4v2.lib" />
-    <Library Include="api\comm\_build\msvc\2013\bin\Win32\Release\comm_static.lib" />
-  </ItemGroup>
 </Project>

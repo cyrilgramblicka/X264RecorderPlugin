@@ -25,14 +25,10 @@ extern "C"{
 	#include <x264/x264.h>
 }
 
-#define __NPLUGINDEBUG
-
 #include "x264_cfg.h"
 
 #include <comm/str.h>
-#include <comm/timer.h>
 #include <mp4v2/mp4v2.h>
-#include <comm/pthreadx.h>
 
 
 class mpeg_video_recorder :
@@ -66,9 +62,5 @@ private:
 	int m_iLastFramesize;
 
 	coid::charstr m_sVideoFolderPath;
-#ifdef __PLUGINDEBUG
-// debug timer
-	coid::nsec_timer m_oPerformanceTimer;
-#endif
 };
 

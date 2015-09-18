@@ -43,6 +43,7 @@
     <LinkIncremental>true</LinkIncremental>
     <TargetName>mpeg_recorder_plugin</TargetName>
     <OutDir>$(SolutionDir)bin\$(Configuration)</OutDir>
+    <IncludePath>$(ProjectDir)api;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
@@ -232,11 +233,6 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="mpeg_video_recorder.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <Library Include="api\comm\_build\msvc\2013\bin\Win32\Release\comm_static.lib" />
-    <Library Include="api\mp4v2\libmp4v2.lib" />
-    <Library Include="api\x264\libx264.lib" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

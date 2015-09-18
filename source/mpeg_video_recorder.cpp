@@ -6,6 +6,7 @@
 #include <comm/dir.h>
 #include <comm/commexception.h>
 #include <comm/commtime.h>
+#include <comm/timer.h>
 
 #define WARNINGMESSAGE(szMsg)			"warning: (MpegRecorderPlugin) "szMsg
 #define ERRORMESSAGE(szMsg)			"error: (MpegRecoredPlugin) "szMsg
@@ -40,11 +41,6 @@ bool mpeg_video_recorder::initialize(const coid::token& video_folder, int width,
 }
 
 void mpeg_video_recorder::process_frame(const void* data, uints size, uint64 timestamp_ns, uint nbatchframes, bool video_end){
-#ifdef __PLUGINDEBUG
-	//////////////
-	m_oPerformanceTimer.reset();
-	/////////////
-#endif	
 	if (!m_IsRecording){
 		// this should't be there but last frame isn't uniqe so i must skip frames sent after "last" frame
 		return;
@@ -90,16 +86,7 @@ void mpeg_video_recorder::process_frame(const void* data, uints size, uint64 tim
 			MP4WriteSample(m_hMp4FileHandle, m_iVideoTrackID, m_pLastNals[0].p_payload, m_iLastFramesize, frameDuration);
 		}
 		StopRecording();
-	}
-#ifdef __PLUGINDEBUG
-	/////////////////////////////////
-	double timeNS = m_oPerformanceTimer.time_ns();
-	coid::charstr msg;
-	msg << "Frame "<< m_uiFrameIndex <<" encoding time: " << timeNS / 1000000.0 << "ms";
-	log(msg);
-	/////////////////////////////////
-#endif
-	log(m_sVideoFolderPath);
+	}	
 }
 
 
