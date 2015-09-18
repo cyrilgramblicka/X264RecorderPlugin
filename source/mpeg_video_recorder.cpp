@@ -41,6 +41,7 @@ bool mpeg_video_recorder::initialize(const coid::token& video_folder, int width,
 }
 
 void mpeg_video_recorder::process_frame(const void* data, uints size, uint64 timestamp_ns, uint nbatchframes, bool video_end){
+
 	if (!m_IsRecording){
 		// this should't be there but last frame isn't uniqe so i must skip frames sent after "last" frame
 		return;
@@ -105,7 +106,10 @@ bool mpeg_video_recorder::InitRecording(int width, int height){
 	mp4FileName << ".mp4";
 	MP4FileHandle fileHandle = MP4Create(mp4FileName.c_str(), MP4FileMode::FILEMODE_CREATE);
 	if (!MP4_IS_VALID_FILE_HANDLE(fileHandle)){
-		log(ERRORMESSAGE("Can't create Mp4 file!"));
+		coid::charstr msg;
+		msg << ERRORMESSAGE(" ");
+		msg << "Can't create Mp4 file! Path: " << mp4FileName;
+		log(msg);
 		return false;
 	}
 
