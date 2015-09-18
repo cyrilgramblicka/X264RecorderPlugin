@@ -41,13 +41,13 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
-    <TargetName>mpeg_recorder_plugin</TargetName>
+    <TargetName>x264_recorder_plugin</TargetName>
     <OutDir>$(SolutionDir)bin\$(Configuration)</OutDir>
     <IncludePath>$(ProjectDir)api;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
-    <TargetName>mpeg_recorder_plugin</TargetName>
+    <TargetName>x264_recorder_plugin</TargetName>
     <IncludePath>$(ProjectDir)api;$(IncludePath)</IncludePath>
     <OutDir>$(SolutionDir)bin\$(Configuration)</OutDir>
   </PropertyGroup>
