@@ -36,7 +36,7 @@ void mpeg_video_recorder::on_user_key(bool on){
 
 bool mpeg_video_recorder::initialize(const coid::token& video_folder, int width, int height){
 	m_sVideoFolderPath = video_folder;
-	m_sVideoFolderPath << "\\";
+	coid::directory::treat_trailing_separator(m_sVideoFolderPath, true);
 	return InitRecording(width, height);
 }
 
