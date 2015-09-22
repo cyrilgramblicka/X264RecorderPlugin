@@ -8,7 +8,7 @@ mp4v2 source code: https://mp4v2.googlecode.com/files/mp4v2-2.0.0.tar.bz2
 
 comm source code is in "source\api\comm" directory. Solution file path: "source\api\comm\_build\msvc\2013\comm.sln". Just compile comm_static project.
 
-Instalation instruction:
+Installation instruction:
  
 1. Download binary form this link: https://github.com/cyrilgramblicka/X264RecorderPlugin/raw/master/binary/x264_recorder_plugin.dll
 
